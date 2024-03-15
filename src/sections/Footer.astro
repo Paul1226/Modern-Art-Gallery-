@@ -1,0 +1,36 @@
+---
+const socialNetworks = [
+    {
+      url: "https://facebook.com",
+      href: "./public/facebook.svg",
+    },
+    {
+        url: "https://instagram.com",
+        href: "./public/instagram.svg",
+    },
+    {
+        url: "https://twitter.com",
+        href: "./public/twitter.svg",
+    },
+];
+---
+
+<footer class="bg-secondary text-white w-full h-full">
+    <div class="w-[90%] max-w-[1110px] mx-auto py-10 flex flex-col justify-between gap-10 md:flex-row">
+        <div class="flex flex-col justify-between gap-10 md:gap-0 md:flex-row md:w-[70%] lg:w-[60%]">
+            <h3 class="text-2xl min-w-[120px] max-w-[120px] uppercase xl:3xl">Modern Art Gallery</h3>
+            <p class="text-base font-[200] xl:text-lg max-w-[290px] lg:max-w-[400px]">The Modern Art Gallery is free to all visitors and open seven days a week from 8am to 9pm. Find us at 99 King Street, Newport, USA.</p>
+        </div>
+        <div class="w-[100px] flex items-start justify-between">
+            {
+                socialNetworks.map((socialNetwork) => {
+                    return (
+                        <a href={socialNetwork.url} class="socialNetwork">
+                            <img src=`${socialNetwork.href}` alt="Icono de la red social">
+                        </a>
+                    );
+                })
+            }
+        </div>
+    </div>
+</footer>
