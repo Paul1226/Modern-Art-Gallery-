@@ -1,0 +1,36 @@
+---
+
+---
+<section class="w-[90%] max-w-[1110px] mx-auto my-16">
+    <div class="hero__content grid grid-cols-1 gap-6 md:grid-cols-5 items-center">
+        <figure class="md:[grid-area:one]">
+            <img src="./public/firstImage.jpg" alt="Primer imagen del hero" class="w-full h-full object-cover">
+        </figure>
+        <div class="flex flex-col gap-5 md:[grid-area:head]">
+            <h2 class="uppercase text-5xl xl:text-6xl">Your day at the Gallety</h2>
+            <p class="text-lg xl:text-2xl">Wander through our distinct collections and find new insights about our artists. Dive into the details of their creative process.</p>
+        </div>
+        <figure class="md:[grid-area:dos] h-full">
+            <img src="./public/secondImage.jpg" alt="Segunda imagen del hero" class="w-full h-full object-cover">
+        </figure>
+        <figure class="md:[grid-area:tres] h-full">
+            <img src="./public/thirdImage.jpg" alt="Tercera imagen del hero" class="w-full h-full object-cover">
+        </figure>
+        <footer class="flex flex-col gap-5 text-white bg-secondary px-8 py-12 md:[grid-area:foot] h-full">
+            <h2 class="uppercase text-5xl xl:text-6xl">Come & be inspired</h2>
+            <p class="text-lg xl:text-2xl">We’re excited to welcome you to our gallery and see how our collections influence you.</p>
+        </footer>
+    </div>
+</section>
+
+<style>
+
+    @media (min-width: 768px) {
+        .hero__content {
+            grid-template-areas:
+            'head head one one one'
+            'dos dos dos tres tres'
+            'dos dos dos foot foot';
+        }
+    }
+</style>

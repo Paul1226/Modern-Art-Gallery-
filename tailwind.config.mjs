@@ -15,6 +15,9 @@ export default {
 				'2p':'1fr 1.3fr',
 				'3p':'1fr 1fr 1.5fr'
 			},
+			gridTemplateAreas:{
+				heroTemp:'header one, dos tres, dos foot'
+			}
 		},
 	},
 	plugins: [],
