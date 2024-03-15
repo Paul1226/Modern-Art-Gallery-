@@ -10,8 +10,12 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^4.5.4",
     "@astrojs/check": "^0.5.9",
+    "@astrojs/tailwind": "^5.1.0",
+    "@fontsource-variable/big-shoulders-display": "^5.0.19",
+    "@fontsource-variable/outfit": "^5.0.12",
+    "astro": "^4.5.4",
+    "tailwindcss": "^3.4.1",
     "typescript": "^5.4.2"
   }
 }
